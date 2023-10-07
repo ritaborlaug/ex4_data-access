@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.accessingdatajpa.AccessingDataJpaApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-07T13:49:57" hostname="Rita-sin-Air.home" time="0.388">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.accessingdatajpa.AccessingDataJpaApplicationTests" time="0.388"/>
+  <system-out><![CDATA[15:49:55.890 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.accessingdatajpa.AccessingDataJpaApplicationTests]: AccessingDataJpaApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:49:55.935 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.accessingdatajpa.AccessingDataJpaApplication for test class com.example.accessingdatajpa.AccessingDataJpaApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.0)
+
+2023-10-07T15:49:56.074+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplicationTests   : Starting AccessingDataJpaApplicationTests using Java 17.0.8 with PID 97055 (started by ritab in /Users/ritab/iCloudDrive/IMØ/MASTER/DAT250/gs-accessing-data-jpa/initial)
+2023-10-07T15:49:56.075+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-10-07T15:49:56.224+02:00  INFO 97055 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-07T15:49:56.242+02:00  INFO 97055 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2023-10-07T15:49:56.378+02:00  INFO 97055 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-07T15:49:56.459+02:00  INFO 97055 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:2626eee3-21b6-4ad8-92c8-078645ea3149 user=SA
+2023-10-07T15:49:56.460+02:00  INFO 97055 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-07T15:49:56.485+02:00  INFO 97055 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-07T15:49:56.504+02:00  INFO 97055 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-10-07T15:49:56.505+02:00  INFO 97055 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-07T15:49:56.556+02:00  INFO 97055 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:49:56.607+02:00  INFO 97055 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-07T15:49:56.628+02:00  INFO 97055 --- [    Test worker] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-10-07T15:49:56.708+02:00  INFO 97055 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-07T15:49:56.936+02:00  INFO 97055 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-07T15:49:56.952+02:00  INFO 97055 --- [    Test worker] o.h.t.s.i.e.GenerationTargetToDatabase   : HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-10-07T15:49:56.953+02:00  INFO 97055 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-07T15:49:57.104+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplicationTests   : Started AccessingDataJpaApplicationTests in 1.112 seconds (process running for 1.577)
+2023-10-07T15:49:57.128+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customers found with findAll():
+2023-10-07T15:49:57.128+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : -------------------------------
+2023-10-07T15:49:57.169+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=1, firstName='Jack', lastName='Bauer']
+2023-10-07T15:49:57.169+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=2, firstName='Chloe', lastName='O'Brian']
+2023-10-07T15:49:57.169+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=3, firstName='Kim', lastName='Bauer']
+2023-10-07T15:49:57.169+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=4, firstName='David', lastName='Palmer']
+2023-10-07T15:49:57.170+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=5, firstName='Michelle', lastName='Dessler']
+2023-10-07T15:49:57.170+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : 
+2023-10-07T15:49:57.173+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer found with findById(1L):
+2023-10-07T15:49:57.174+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : --------------------------------
+2023-10-07T15:49:57.174+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=1, firstName='Jack', lastName='Bauer']
+2023-10-07T15:49:57.174+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : 
+2023-10-07T15:49:57.174+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer found with findByLastName('Bauer'):
+2023-10-07T15:49:57.174+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : --------------------------------------------
+2023-10-07T15:49:57.192+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=1, firstName='Jack', lastName='Bauer']
+2023-10-07T15:49:57.192+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : Customer[id=3, firstName='Kim', lastName='Bauer']
+2023-10-07T15:49:57.192+02:00  INFO 97055 --- [    Test worker] c.e.a.AccessingDataJpaApplication        : 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
